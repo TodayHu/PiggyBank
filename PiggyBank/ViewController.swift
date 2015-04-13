@@ -10,11 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    private var piggybankIV: UIImageView?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
         view.backgroundColor = UIColor.whiteColor()
+
+        piggybankIV = UIImageView(forAutoLayout: ())
     }
 
     override func didReceiveMemoryWarning() {
