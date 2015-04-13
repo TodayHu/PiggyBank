@@ -13,7 +13,6 @@
 		AB16B9471ADBE0CC00F30BC3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB16B9461ADBE0CC00F30BC3 /* Images.xcassets */; };
 		AB16B94A1ADBE0CC00F30BC3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB16B9481ADBE0CC00F30BC3 /* LaunchScreen.xib */; };
 		AB16B9561ADBE0CC00F30BC3 /* PiggyBankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB16B9551ADBE0CC00F30BC3 /* PiggyBankTests.swift */; };
-		AB16B9601ADBE93100F30BC3 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = AB16B95F1ADBE93100F30BC3 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -215,7 +214,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB16B9601ADBE93100F30BC3 /* README.md in Sources */,
 				AB16B9421ADBE0CC00F30BC3 /* ViewController.swift in Sources */,
 				AB16B9401ADBE0CC00F30BC3 /* AppDelegate.swift in Sources */,
 			);
