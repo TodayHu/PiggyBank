@@ -14,6 +14,9 @@ class ViewController: UIViewController {
     private let kImageHeight = CGFloat(300)
 
     private var piggybankIV: UIImageView!
+    private var buttonPlus = UIButton(forAutoLayout: ())!
+    private var buttonMinus = UIButton(forAutoLayout: ())!
+
 
     // MARK: - Init
     
@@ -22,6 +25,13 @@ class ViewController: UIViewController {
         
         piggybankIV = UIImageView(forAutoLayout: ())
         piggybankIV.image = UIImage(named: "piggybank-640")
+
+        buttonPlus.setTitle("skipped coffee = saved $3", forState: .Normal)
+        buttonPlus.backgroundColor = Style.colorLemonChiffon // Style.colorPaleGreen // Style.colorLemonChiffon
+        buttonPlus.layer.cornerRadius = 5.0
+        buttonPlus.setTitleColor(UIColor(rgb: 0xA52A2A), forState: .Normal)
+        buttonPlus.setTitleColor(UIColor.grayColor(), forState: .Highlighted)
+        buttonPlus.addTarget(self, action: "buttonTappedThreeDollars:", forControlEvents: .TouchUpInside)
 
     }
     
@@ -40,19 +50,27 @@ class ViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     } 
 
+
     // MARK: - View Life Cycle methods
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
-        view.backgroundColor = Style.colorPaleGreen;
+        view.backgroundColor = Style.colorPaleGreen // Style.colorLemonChiffon //Style.colorPaleGreen;
 
         view.addSubview(piggybankIV)
         piggybankIV.autoAlignAxisToSuperviewAxis(.Vertical)
         piggybankIV.autoPinEdgeToSuperviewEdge(.Top, withInset: 20)
         piggybankIV.autoSetDimension(.Width, toSize: kImageWidth)
         piggybankIV.autoSetDimension(.Height, toSize: kImageHeight)
+        
+        view.addSubview(buttonPlus)
+        buttonPlus.autoPinEdge(.Top, toEdge: .Bottom, ofView: piggybankIV)
+        buttonPlus.autoPinEdgeToSuperviewEdge(.Left, withInset: 50)
+        buttonPlus.autoPinEdgeToSuperviewEdge(.Right, withInset: 50)
+        buttonPlus.autoSetDimension(.Height, toSize: 60)
+        buttonPlus.autoCenterInSuperview()
     }
 
     override func didReceiveMemoryWarning() {
@@ -60,6 +78,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+
+    // MARK: - Button handler methods
+    func buttonTappedThreeDollars(sender: UIButton!) {
+        println("buttonTappedThreeDollars: started.")
+    }
 
 }
 
