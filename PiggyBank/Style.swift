@@ -10,6 +10,7 @@ import Foundation
 struct Style {
 
     // Color in standard HTML color names.
+    static let colorBrown = UIColor(rgb: 0xA52A2A)
     static let colorGold = UIColor(rgb: 0xFFD700)
     static let colorLemonChiffon = UIColor(rgb: 0xFFFACD)
     static let colorLightSkyBlue = UIColor(rgb: 0x87CEFA)
@@ -20,5 +21,4 @@ struct Style {
     static let colorSpringGreen = UIColor(rgb: 0x00FF7F)
     static let colorTurquoise = UIColor(rgb: 0x40E0D0)
     static let colorTeal = UIColor(rgb: 0x008080)
-
 }

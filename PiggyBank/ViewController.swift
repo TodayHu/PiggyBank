@@ -15,7 +15,7 @@ class ViewController: UIViewController {
 
     private var piggybankIV: UIImageView!
     private var buttonPlus = UIButton(forAutoLayout: ())!
-    private var buttonMinus = UIButton(forAutoLayout: ())!
+    private var buttonMinus : UIButton!
 
 
     // MARK: - Init
@@ -26,11 +26,8 @@ class ViewController: UIViewController {
         piggybankIV = UIImageView(forAutoLayout: ())
         piggybankIV.image = UIImage(named: "piggybank-640")
 
+        buttonPlus = ScreenUtil.sharedInstance.getButton()
         buttonPlus.setTitle("skipped coffee = saved $3", forState: .Normal)
-        buttonPlus.backgroundColor = Style.colorLemonChiffon // Style.colorPaleGreen // Style.colorLemonChiffon
-        buttonPlus.layer.cornerRadius = 5.0
-        buttonPlus.setTitleColor(UIColor(rgb: 0xA52A2A), forState: .Normal)
-        buttonPlus.setTitleColor(UIColor.grayColor(), forState: .Highlighted)
         buttonPlus.addTarget(self, action: "buttonTappedThreeDollars:", forControlEvents: .TouchUpInside)
 
     }
