@@ -14,8 +14,9 @@ class ViewController: UIViewController {
     private let kImageHeight = CGFloat(300)
 
     private var piggybankIV: UIImageView!
-    private var buttonPlus = UIButton(forAutoLayout: ())!
-    private var buttonMinus : UIButton!
+    private var buttonAddThree = UIButton(forAutoLayout: ())!
+    private var buttonAddFive = UIButton(forAutoLayout: ())!
+    private var buttonSpend = UIButton(forAutoLayout: ())!
 
 
     // MARK: - Init
@@ -26,9 +27,9 @@ class ViewController: UIViewController {
         piggybankIV = UIImageView(forAutoLayout: ())
         piggybankIV.image = UIImage(named: "piggybank-640")
 
-        buttonPlus = ScreenUtil.sharedInstance.getButton()
-        buttonPlus.setTitle("skipped coffee = saved $3", forState: .Normal)
-        buttonPlus.addTarget(self, action: "buttonTappedThreeDollars:", forControlEvents: .TouchUpInside)
+        buttonAddThree = ScreenUtil.sharedInstance.getButton()
+        buttonAddThree.setTitle("skipped coffee = saved $3", forState: .Normal)
+        buttonAddThree.addTarget(self, action: "buttonTappedThreeDollars:", forControlEvents: .TouchUpInside)
 
     }
     
@@ -62,12 +63,12 @@ class ViewController: UIViewController {
         piggybankIV.autoSetDimension(.Width, toSize: kImageWidth)
         piggybankIV.autoSetDimension(.Height, toSize: kImageHeight)
         
-        view.addSubview(buttonPlus)
-        buttonPlus.autoPinEdge(.Top, toEdge: .Bottom, ofView: piggybankIV)
-        buttonPlus.autoPinEdgeToSuperviewEdge(.Left, withInset: 50)
-        buttonPlus.autoPinEdgeToSuperviewEdge(.Right, withInset: 50)
-        buttonPlus.autoSetDimension(.Height, toSize: 60)
-        buttonPlus.autoCenterInSuperview()
+        view.addSubview(buttonAddThree)
+        buttonAddThree.autoPinEdge(.Top, toEdge: .Bottom, ofView: piggybankIV)
+        buttonAddThree.autoPinEdgeToSuperviewEdge(.Left, withInset: 50)
+        buttonAddThree.autoPinEdgeToSuperviewEdge(.Right, withInset: 50)
+        buttonAddThree.autoSetDimension(.Height, toSize: 60)
+        buttonAddThree.autoCenterInSuperview()
     }
 
     override func didReceiveMemoryWarning() {
