@@ -12,6 +12,8 @@
 		AB16B9471ADBE0CC00F30BC3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB16B9461ADBE0CC00F30BC3 /* Images.xcassets */; };
 		AB16B94A1ADBE0CC00F30BC3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB16B9481ADBE0CC00F30BC3 /* LaunchScreen.xib */; };
 		AB16B9561ADBE0CC00F30BC3 /* PiggyBankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB16B9551ADBE0CC00F30BC3 /* PiggyBankTests.swift */; };
+		AB58DFC71ADD308D00F41625 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB58DFC61ADD308D00F41625 /* UIColorExtensions.swift */; };
+		AB58DFC91ADD317000F41625 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB58DFC81ADD317000F41625 /* Style.swift */; };
 		FEB279F99289E8C0356DEF09 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4573257CFEA64CF642D5045 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +38,8 @@
 		AB16B9541ADBE0CC00F30BC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB16B9551ADBE0CC00F30BC3 /* PiggyBankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiggyBankTests.swift; sourceTree = "<group>"; };
 		AB16B95F1ADBE93100F30BC3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		AB58DFC61ADD308D00F41625 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		AB58DFC81ADD317000F41625 /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 		ABFC99B41ADC72F40073AB46 /* PiggyBank-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PiggyBank-Bridging-Header.h"; sourceTree = "<group>"; };
 		DAAE45800054E488C0445190 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F4573257CFEA64CF642D5045 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +89,8 @@
 		AB16B93C1ADBE0CC00F30BC3 /* PiggyBank */ = {
 			isa = PBXGroup;
 			children = (
+				AB58DFC61ADD308D00F41625 /* UIColorExtensions.swift */,
+				AB58DFC81ADD317000F41625 /* Style.swift */,
 				ABFC99B41ADC72F40073AB46 /* PiggyBank-Bridging-Header.h */,
 				AB16B93F1ADBE0CC00F30BC3 /* AppDelegate.swift */,
 				AB16B9411ADBE0CC00F30BC3 /* ViewController.swift */,
@@ -271,8 +277,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB58DFC71ADD308D00F41625 /* UIColorExtensions.swift in Sources */,
 				AB16B9421ADBE0CC00F30BC3 /* ViewController.swift in Sources */,
 				AB16B9401ADBE0CC00F30BC3 /* AppDelegate.swift in Sources */,
+				AB58DFC91ADD317000F41625 /* Style.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
