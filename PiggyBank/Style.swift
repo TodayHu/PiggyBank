@@ -14,6 +14,7 @@ struct Style {
     static let colorGold = UIColor(rgb: 0xFFD700)
     static let colorLemonChiffon = UIColor(rgb: 0xFFFACD)
     static let colorLightSkyBlue = UIColor(rgb: 0x87CEFA)
+    static let colorLightCyan = UIColor(rgb: 0xE0FFFF)
     static let colorLimeGreen = UIColor(rgb: 0x32CD32)
     static let colorMediumAquaMarine = UIColor(rgb: 0x66CDAA)
     static let colorMediumSpringGreen = UIColor(rgb: 0x00FA9A)
