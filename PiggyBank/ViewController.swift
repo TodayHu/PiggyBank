@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     private var buttonAddFive = UIButton(forAutoLayout: ())!
     private var buttonSpend = UIButton(forAutoLayout: ())!
 
+    // TODO: Add a PiggyBankModel to keep track of balance.
 
     // MARK: - Init
     
@@ -41,7 +42,7 @@ class ViewController: UIViewController {
 
         buttonSpend = ScreenUtil.sharedInstance.getButton()
         buttonSpend.backgroundColor = Style.colorLightCyan
-        buttonSpend.setTitle("Spend the money!", forState: .Normal)
+        buttonSpend.setTitle("spend the money!", forState: .Normal)
         buttonSpend.addTarget(self, action: "buttonTappedSpend:", forControlEvents: .TouchUpInside)
     }
     
