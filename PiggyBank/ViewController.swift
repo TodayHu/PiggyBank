@@ -70,28 +70,36 @@ class ViewController: UIViewController {
         view.backgroundColor = Style.colorPaleGreen // Style.colorLemonChiffon //Style.colorPaleGreen;
 
         view.addSubview(piggybankIV)
+        view.addSubview(buttonAddThree)
+        view.addSubview(buttonAddFive)
+        view.addSubview(buttonSpend)
+
+        view.setTranslatesAutoresizingMaskIntoConstraints(false)
+    }
+
+    override func updateViewConstraints() {
+
         piggybankIV.autoAlignAxisToSuperviewAxis(.Vertical)
         piggybankIV.autoPinEdgeToSuperviewEdge(.Top, withInset: kButtonGapBetween)
         piggybankIV.autoSetDimension(.Width, toSize: kImageWidth)
         piggybankIV.autoSetDimension(.Height, toSize: kImageHeight)
         
-        view.addSubview(buttonAddThree)
         buttonAddThree.autoPinEdge(.Top, toEdge: .Bottom, ofView: piggybankIV)
         buttonAddThree.autoPinEdgeToSuperviewEdge(.Left, withInset: kButtonMarginSide)
         buttonAddThree.autoPinEdgeToSuperviewEdge(.Right, withInset: kButtonMarginSide)
         buttonAddThree.autoSetDimension(.Height, toSize: kButtonHeight)
-
-        view.addSubview(buttonAddFive)
+        
         buttonAddFive.autoPinEdge(.Top, toEdge: .Bottom, ofView: buttonAddThree, withOffset: kButtonGapBetween)
         buttonAddFive.autoPinEdgeToSuperviewEdge(.Left, withInset: kButtonMarginSide)
         buttonAddFive.autoPinEdgeToSuperviewEdge(.Right, withInset: kButtonMarginSide)
         buttonAddFive.autoSetDimension(.Height, toSize: kButtonHeight)
-
-        view.addSubview(buttonSpend)
+        
         buttonSpend.autoPinEdge(.Top, toEdge: .Bottom, ofView: buttonAddFive, withOffset: kButtonGapBetween)
         buttonSpend.autoPinEdgeToSuperviewEdge(.Left, withInset: kButtonMarginSide)
         buttonSpend.autoPinEdgeToSuperviewEdge(.Right, withInset: kButtonMarginSide)
         buttonSpend.autoSetDimension(.Height, toSize: kButtonHeight)
+        
+        super.updateViewConstraints()
     }
 
     override func didReceiveMemoryWarning() {
