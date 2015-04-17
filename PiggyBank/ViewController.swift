@@ -21,8 +21,10 @@ class ViewController: UIViewController {
     private var buttonAddThree = UIButton(forAutoLayout: ())!
     private var buttonAddFive = UIButton(forAutoLayout: ())!
     private var buttonSpend = UIButton(forAutoLayout: ())!
+    private var balanceLabel: UILabel!
 
     // TODO: Add a PiggyBankModel to keep track of balance.
+    // TODO: Show the balance on screen.
 
     // MARK: - Init
     
@@ -44,6 +46,11 @@ class ViewController: UIViewController {
         buttonSpend.backgroundColor = Style.colorLightCyan
         buttonSpend.setTitle("spend the money!", forState: .Normal)
         buttonSpend.addTarget(self, action: "buttonTappedSpend:", forControlEvents: .TouchUpInside)
+        
+        balanceLabel = UILabel(forAutoLayout: ())
+        balanceLabel.font = balanceLabel.font.fontWithSize(50)
+        balanceLabel.textColor = UIColor.whiteColor()
+        balanceLabel.text = "$15"
     }
     
     /// This initializer is always called by the system because it's the designated initializer.
@@ -74,6 +81,7 @@ class ViewController: UIViewController {
         view.addSubview(buttonAddThree)
         view.addSubview(buttonAddFive)
         view.addSubview(buttonSpend)
+        view.addSubview(balanceLabel)
 
         view.setTranslatesAutoresizingMaskIntoConstraints(false)
     }
@@ -99,6 +107,10 @@ class ViewController: UIViewController {
         buttonSpend.autoPinEdgeToSuperviewEdge(.Left, withInset: kButtonMarginSide)
         buttonSpend.autoPinEdgeToSuperviewEdge(.Right, withInset: kButtonMarginSide)
         buttonSpend.autoSetDimension(.Height, toSize: kButtonHeight)
+        
+        balanceLabel.autoAlignAxis(.Vertical, toSameAxisOfView: piggybankIV, withOffset: 10)
+        balanceLabel.autoAlignAxis(.Horizontal, toSameAxisOfView: piggybankIV)
+
         
         super.updateViewConstraints()
     }
