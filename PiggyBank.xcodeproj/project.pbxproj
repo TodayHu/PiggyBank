@@ -12,6 +12,14 @@
 		AB16B9471ADBE0CC00F30BC3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB16B9461ADBE0CC00F30BC3 /* Images.xcassets */; };
 		AB16B94A1ADBE0CC00F30BC3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB16B9481ADBE0CC00F30BC3 /* LaunchScreen.xib */; };
 		AB16B9561ADBE0CC00F30BC3 /* PiggyBankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB16B9551ADBE0CC00F30BC3 /* PiggyBankTests.swift */; };
+		AB1DA6101AE23B96008A6681 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1DA60F1AE23B96008A6681 /* InterfaceController.swift */; };
+		AB1DA6121AE23B96008A6681 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1DA6111AE23B96008A6681 /* NotificationController.swift */; };
+		AB1DA6141AE23B96008A6681 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1DA6131AE23B96008A6681 /* GlanceController.swift */; };
+		AB1DA6161AE23B96008A6681 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB1DA6151AE23B96008A6681 /* Images.xcassets */; };
+		AB1DA61A1AE23B96008A6681 /* PiggyBank WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = AB1DA6191AE23B96008A6681 /* PiggyBank WatchKit App.app */; };
+		AB1DA6221AE23B96008A6681 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB1DA6201AE23B96008A6681 /* Interface.storyboard */; };
+		AB1DA6241AE23B96008A6681 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB1DA6231AE23B96008A6681 /* Images.xcassets */; };
+		AB1DA6271AE23B96008A6681 /* PiggyBank WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AB1DA60A1AE23B96008A6681 /* PiggyBank WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		AB2A41331AE14335004FEFF2 /* BalanceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2A41321AE14335004FEFF2 /* BalanceModel.swift */; };
 		AB58DFC71ADD308D00F41625 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB58DFC61ADD308D00F41625 /* UIColorExtensions.swift */; };
 		AB58DFC91ADD317000F41625 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB58DFC81ADD317000F41625 /* Style.swift */; };
@@ -27,7 +35,35 @@
 			remoteGlobalIDString = AB16B9391ADBE0CC00F30BC3;
 			remoteInfo = PiggyBank;
 		};
+		AB1DA61B1AE23B96008A6681 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB16B9321ADBE0CC00F30BC3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB1DA6181AE23B96008A6681;
+			remoteInfo = "PiggyBank WatchKit App";
+		};
+		AB1DA6251AE23B96008A6681 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB16B9321ADBE0CC00F30BC3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB1DA6091AE23B96008A6681;
+			remoteInfo = "PiggyBank WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AB1DA62E1AE23B96008A6681 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AB1DA6271AE23B96008A6681 /* PiggyBank WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AB16B93A1ADBE0CC00F30BC3 /* PiggyBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PiggyBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +76,17 @@
 		AB16B9541ADBE0CC00F30BC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB16B9551ADBE0CC00F30BC3 /* PiggyBankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiggyBankTests.swift; sourceTree = "<group>"; };
 		AB16B95F1ADBE93100F30BC3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		AB1DA60A1AE23B96008A6681 /* PiggyBank WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "PiggyBank WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB1DA60D1AE23B96008A6681 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB1DA60E1AE23B96008A6681 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		AB1DA60F1AE23B96008A6681 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		AB1DA6111AE23B96008A6681 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		AB1DA6131AE23B96008A6681 /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		AB1DA6151AE23B96008A6681 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AB1DA6191AE23B96008A6681 /* PiggyBank WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PiggyBank WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB1DA61F1AE23B96008A6681 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB1DA6211AE23B96008A6681 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		AB1DA6231AE23B96008A6681 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AB2A41321AE14335004FEFF2 /* BalanceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceModel.swift; sourceTree = "<group>"; };
 		AB58DFC61ADD308D00F41625 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		AB58DFC81ADD317000F41625 /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
@@ -66,6 +113,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AB1DA6071AE23B96008A6681 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -75,6 +129,8 @@
 				AB16B95F1ADBE93100F30BC3 /* README.md */,
 				AB16B93C1ADBE0CC00F30BC3 /* PiggyBank */,
 				AB16B9521ADBE0CC00F30BC3 /* PiggyBankTests */,
+				AB1DA60B1AE23B96008A6681 /* PiggyBank WatchKit Extension */,
+				AB1DA61D1AE23B96008A6681 /* PiggyBank WatchKit App */,
 				AB16B93B1ADBE0CC00F30BC3 /* Products */,
 				E1A5C26A04EBBD01149C8F09 /* Pods */,
 				ACD4388FC697EDEC064ED3E8 /* Frameworks */,
@@ -86,6 +142,8 @@
 			children = (
 				AB16B93A1ADBE0CC00F30BC3 /* PiggyBank.app */,
 				AB16B94F1ADBE0CC00F30BC3 /* PiggyBankTests.xctest */,
+				AB1DA60A1AE23B96008A6681 /* PiggyBank WatchKit Extension.appex */,
+				AB1DA6191AE23B96008A6681 /* PiggyBank WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,6 +183,45 @@
 			isa = PBXGroup;
 			children = (
 				AB16B9541ADBE0CC00F30BC3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AB1DA60B1AE23B96008A6681 /* PiggyBank WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AB1DA60F1AE23B96008A6681 /* InterfaceController.swift */,
+				AB1DA6111AE23B96008A6681 /* NotificationController.swift */,
+				AB1DA6131AE23B96008A6681 /* GlanceController.swift */,
+				AB1DA6151AE23B96008A6681 /* Images.xcassets */,
+				AB1DA60C1AE23B96008A6681 /* Supporting Files */,
+			);
+			path = "PiggyBank WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		AB1DA60C1AE23B96008A6681 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB1DA60D1AE23B96008A6681 /* Info.plist */,
+				AB1DA60E1AE23B96008A6681 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AB1DA61D1AE23B96008A6681 /* PiggyBank WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				AB1DA6201AE23B96008A6681 /* Interface.storyboard */,
+				AB1DA6231AE23B96008A6681 /* Images.xcassets */,
+				AB1DA61E1AE23B96008A6681 /* Supporting Files */,
+			);
+			path = "PiggyBank WatchKit App";
+			sourceTree = "<group>";
+		};
+		AB1DA61E1AE23B96008A6681 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB1DA61F1AE23B96008A6681 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -177,10 +274,12 @@
 				AB16B9371ADBE0CC00F30BC3 /* Frameworks */,
 				AB16B9381ADBE0CC00F30BC3 /* Resources */,
 				97D44B9AC6C5D5E9506A4D3B /* Copy Pods Resources */,
+				AB1DA62E1AE23B96008A6681 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				AB1DA6261AE23B96008A6681 /* PBXTargetDependency */,
 			);
 			name = PiggyBank;
 			productName = PiggyBank;
@@ -205,6 +304,39 @@
 			productReference = AB16B94F1ADBE0CC00F30BC3 /* PiggyBankTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		AB1DA6091AE23B96008A6681 /* PiggyBank WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB1DA62D1AE23B96008A6681 /* Build configuration list for PBXNativeTarget "PiggyBank WatchKit Extension" */;
+			buildPhases = (
+				AB1DA6061AE23B96008A6681 /* Sources */,
+				AB1DA6071AE23B96008A6681 /* Frameworks */,
+				AB1DA6081AE23B96008A6681 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB1DA61C1AE23B96008A6681 /* PBXTargetDependency */,
+			);
+			name = "PiggyBank WatchKit Extension";
+			productName = "PiggyBank WatchKit Extension";
+			productReference = AB1DA60A1AE23B96008A6681 /* PiggyBank WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		AB1DA6181AE23B96008A6681 /* PiggyBank WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB1DA62C1AE23B96008A6681 /* Build configuration list for PBXNativeTarget "PiggyBank WatchKit App" */;
+			buildPhases = (
+				AB1DA6171AE23B96008A6681 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PiggyBank WatchKit App";
+			productName = "PiggyBank WatchKit App";
+			productReference = AB1DA6191AE23B96008A6681 /* PiggyBank WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -220,6 +352,12 @@
 					AB16B94E1ADBE0CC00F30BC3 = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = AB16B9391ADBE0CC00F30BC3;
+					};
+					AB1DA6091AE23B96008A6681 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					AB1DA6181AE23B96008A6681 = {
+						CreatedOnToolsVersion = 6.2;
 					};
 				};
 			};
@@ -238,6 +376,8 @@
 			targets = (
 				AB16B9391ADBE0CC00F30BC3 /* PiggyBank */,
 				AB16B94E1ADBE0CC00F30BC3 /* PiggyBankTests */,
+				AB1DA6091AE23B96008A6681 /* PiggyBank WatchKit Extension */,
+				AB1DA6181AE23B96008A6681 /* PiggyBank WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -256,6 +396,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB1DA6081AE23B96008A6681 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB1DA6161AE23B96008A6681 /* Images.xcassets in Resources */,
+				AB1DA61A1AE23B96008A6681 /* PiggyBank WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB1DA6171AE23B96008A6681 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB1DA6221AE23B96008A6681 /* Interface.storyboard in Resources */,
+				AB1DA6241AE23B96008A6681 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +474,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AB1DA6061AE23B96008A6681 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB1DA6121AE23B96008A6681 /* NotificationController.swift in Sources */,
+				AB1DA6101AE23B96008A6681 /* InterfaceController.swift in Sources */,
+				AB1DA6141AE23B96008A6681 /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -323,6 +491,16 @@
 			isa = PBXTargetDependency;
 			target = AB16B9391ADBE0CC00F30BC3 /* PiggyBank */;
 			targetProxy = AB16B9501ADBE0CC00F30BC3 /* PBXContainerItemProxy */;
+		};
+		AB1DA61C1AE23B96008A6681 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB1DA6181AE23B96008A6681 /* PiggyBank WatchKit App */;
+			targetProxy = AB1DA61B1AE23B96008A6681 /* PBXContainerItemProxy */;
+		};
+		AB1DA6261AE23B96008A6681 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB1DA6091AE23B96008A6681 /* PiggyBank WatchKit Extension */;
+			targetProxy = AB1DA6251AE23B96008A6681 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -333,6 +511,14 @@
 				AB16B9491ADBE0CC00F30BC3 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		AB1DA6201AE23B96008A6681 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB1DA6211AE23B96008A6681 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -420,6 +606,7 @@
 			baseConfigurationReference = DAAE45800054E488C0445190 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = PiggyBank/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -432,6 +619,7 @@
 			baseConfigurationReference = F5D916FB7CD07E1B359763E7 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = PiggyBank/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -473,6 +661,60 @@
 			};
 			name = Release;
 		};
+		AB1DA6281AE23B96008A6681 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PiggyBank WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AB1DA6291AE23B96008A6681 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "PiggyBank WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		AB1DA62A1AE23B96008A6681 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = PiggyBank_WatchKit_Extension;
+				INFOPLIST_FILE = "PiggyBank WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		AB1DA62B1AE23B96008A6681 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = PiggyBank_WatchKit_Extension;
+				INFOPLIST_FILE = "PiggyBank WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -502,6 +744,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		AB1DA62C1AE23B96008A6681 /* Build configuration list for PBXNativeTarget "PiggyBank WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB1DA62A1AE23B96008A6681 /* Debug */,
+				AB1DA62B1AE23B96008A6681 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AB1DA62D1AE23B96008A6681 /* Build configuration list for PBXNativeTarget "PiggyBank WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB1DA6281AE23B96008A6681 /* Debug */,
+				AB1DA6291AE23B96008A6681 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

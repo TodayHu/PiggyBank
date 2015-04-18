@@ -4,6 +4,21 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Glance - PiggyBank WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>Notification - PiggyBank WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>PiggyBank WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 		<key>PiggyBank.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +33,11 @@
 			<true/>
 		</dict>
 		<key>AB16B94E1ADBE0CC00F30BC3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AB1DA6181AE23B96008A6681</key>
 		<dict>
 			<key>primary</key>
 			<true/>
