@@ -23,6 +23,9 @@
                             </connections>
                         </button>
                     </items>
+                    <connections>
+                        <outlet property="balanceLabel" destination="dB6-Ip-HvG" id="5ir-EA-YaQ"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="235" y="347"/>
