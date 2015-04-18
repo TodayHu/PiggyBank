@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     private var buttonAddFive = UIButton(forAutoLayout: ())!
     private var buttonSpend = UIButton(forAutoLayout: ())!
     private var balanceLabel: UILabel!
+    private var balanceModel: BalanceModel!
 
     // TODO: Add a PiggyBankModel to keep track of balance.
     // TODO: Show the balance on screen.
@@ -30,7 +31,9 @@ class ViewController: UIViewController {
     
     convenience override init() {
         self.init(nibName: nil, bundle: nil)
-        
+
+        balanceModel = BalanceModel()
+
         piggybankIV = UIImageView(forAutoLayout: ())
         piggybankIV.image = UIImage(named: "piggybank-640")
 
@@ -50,7 +53,7 @@ class ViewController: UIViewController {
         balanceLabel = UILabel(forAutoLayout: ())
         balanceLabel.font = balanceLabel.font.fontWithSize(50)
         balanceLabel.textColor = UIColor.whiteColor()
-        balanceLabel.text = "$15"
+        balanceLabel.text = balanceModel.getBalanceString()
     }
     
     /// This initializer is always called by the system because it's the designated initializer.
@@ -111,7 +114,6 @@ class ViewController: UIViewController {
         balanceLabel.autoAlignAxis(.Vertical, toSameAxisOfView: piggybankIV, withOffset: 10)
         balanceLabel.autoAlignAxis(.Horizontal, toSameAxisOfView: piggybankIV)
 
-        
         super.updateViewConstraints()
     }
 
@@ -125,14 +127,27 @@ class ViewController: UIViewController {
 
     func buttonTappedThreeDollars(sender: UIButton!) {
         println("buttonTappedThreeDollars: started.")
+        balanceModel.addMoney(3.0)
+        refreshUIAccordingToModel()
     }
 
     func buttonTappedFiveDollars(sender: UIButton!) {
         println("buttonTappedFiveDollars: started.")
+        balanceModel.addMoney(5.0)
+        refreshUIAccordingToModel()
     }
 
     func buttonTappedSpend(sender: UIButton!) {
         println("buttonTappedSpend: started.")
+        balanceModel.spendAll()
+        refreshUIAccordingToModel()
+    }
+
+
+    // MARK: - Other
+    
+    func refreshUIAccordingToModel() {
+        println("refreshUIAccordingToModel: started.")
+        balanceLabel.text = balanceModel.getBalanceString()
     }
 }
-
