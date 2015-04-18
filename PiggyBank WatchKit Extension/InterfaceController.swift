@@ -8,23 +8,26 @@
 
 import WatchKit
 import Foundation
-
+import PiggyBankCommon
 
 class InterfaceController: WKInterfaceController {
 
     @IBOutlet weak var balanceLabel: WKInterfaceLabel!
+    
+    private var balanceModel: BalanceModel!
 
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
         // Configure interface objects here.
+        balanceModel = BalanceModel()
     }
 
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
         
-        balanceLabel.setText("$100")
+        balanceLabel.setText(balanceModel.getBalanceString())
     }
 
     override func didDeactivate() {
