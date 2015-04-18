@@ -10,13 +10,15 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="PiggyBank_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <group width="1" height="1" alignment="left" backgroundImage="piggybank-640" contentMode="scaleAspectFit" id="LwY-nr-7Vx">
-                            <items>
-                                <label alignment="center" verticalAlignment="center" text="$0" id="dB6-Ip-HvG">
-                                    <fontDescription key="font" type="boldSystem" pointSize="28"/>
-                                </label>
-                            </items>
-                        </group>
+                        <button alignment="left" id="fcT-l5-ksT">
+                            <group key="contentGroup" width="1" height="1" alignment="left" backgroundImage="piggybank-640" id="TCf-JG-3pb">
+                                <items>
+                                    <label alignment="center" verticalAlignment="center" text="$0" id="dB6-Ip-HvG">
+                                        <fontDescription key="font" type="boldSystem" pointSize="28"/>
+                                    </label>
+                                </items>
+                            </group>
+                        </button>
                     </items>
                 </controller>
             </objects>
