@@ -18,11 +18,27 @@
                                     </label>
                                 </items>
                             </group>
+                            <connections>
+                                <segue destination="ibh-A6-1J1" kind="modal" id="cDj-TC-shX"/>
+                            </connections>
                         </button>
                     </items>
                 </controller>
             </objects>
             <point key="canvasLocation" x="235" y="347"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="OAU-v4-d6S">
+            <objects>
+                <controller id="ibh-A6-1J1">
+                    <items>
+                        <imageView height="60" alignment="center" verticalAlignment="center" image="currency_dollar_red" contentMode="scaleAspectFit" id="OyQ-nJ-vrc"/>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Saved $3" id="TA6-HX-QHR"/>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Saved $10" id="qMZ-Xz-fEB"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="440" y="347"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
