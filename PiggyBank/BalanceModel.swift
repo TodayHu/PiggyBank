@@ -12,15 +12,18 @@ public class BalanceModel {
     
     private var balance = 0.0
     
-    func addMoney(amount: Double) {
+    public init() {
+    }
+
+    public func addMoney(amount: Double) {
         balance += amount
     }
 
-    func spendAll() {
+    public func spendAll() {
         balance = 0.0
     }
 
-    func getBalanceString() -> String {
+    public func getBalanceString() -> String {
         return String(format: "$%.0f", balance)
     }
 }
