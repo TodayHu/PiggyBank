@@ -34,6 +34,20 @@
                ReferencedContainer = "container:PiggyBank.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AB0F269B1AE29DC200D18BB7"
+               BuildableName = "PiggyBankCommonTests.xctest"
+               BlueprintName = "PiggyBankCommonTests"
+               ReferencedContainer = "container:PiggyBank.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -49,6 +63,16 @@
                BlueprintIdentifier = "AB16B94E1ADBE0CC00F30BC3"
                BuildableName = "PiggyBankTests.xctest"
                BlueprintName = "PiggyBankTests"
+               ReferencedContainer = "container:PiggyBank.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AB0F269B1AE29DC200D18BB7"
+               BuildableName = "PiggyBankCommonTests.xctest"
+               BlueprintName = "PiggyBankCommonTests"
                ReferencedContainer = "container:PiggyBank.xcodeproj">
             </BuildableReference>
          </TestableReference>

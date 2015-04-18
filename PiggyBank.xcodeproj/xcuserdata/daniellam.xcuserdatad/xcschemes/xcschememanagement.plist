@@ -24,9 +24,24 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>PiggyBankCommon.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>AB0F26911AE29DC200D18BB7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AB0F269B1AE29DC200D18BB7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>AB16B9391ADBE0CC00F30BC3</key>
 		<dict>
 			<key>primary</key>
