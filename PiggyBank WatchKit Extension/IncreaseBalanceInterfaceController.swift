@@ -33,10 +33,12 @@ class IncreaseBalanceInterfaceController: WKInterfaceController {
     
     @IBAction func savedThreeDollars() {
         balanceModel.addMoney(3)
+        dismissController()
     }
 
     @IBAction func savedTenDollars() {
         balanceModel.addMoney(10)
+        dismissController()
     }
 }
 
