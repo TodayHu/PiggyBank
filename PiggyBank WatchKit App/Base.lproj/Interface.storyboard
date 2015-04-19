@@ -58,6 +58,7 @@
                 <controller id="yhg-Ut-EjJ">
                     <items>
                         <label alignment="center" text="Goal" id="bs9-4s-oE9"/>
+                        <imageView width="1" height="100" alignment="left" image="donut-chart-yellow-00-" contentMode="scaleAspectFit" id="u2O-aX-H4g"/>
                         <label alignment="center" text="60% reached" textAlignment="center" id="by0-Ne-yGv"/>
                     </items>
                 </controller>
