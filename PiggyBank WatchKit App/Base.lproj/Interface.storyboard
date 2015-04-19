@@ -56,8 +56,23 @@
             <objects>
                 <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController" customModule="PiggyBank_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <group alignment="left" id="t8f-Gd-c4y"/>
-                        <group alignment="left" id="uCw-4Q-Ouw"/>
+                        <group alignment="left" layout="vertical" id="t8f-Gd-c4y">
+                            <items>
+                                <label alignment="left" text="PiggyBank" id="aeJ-g4-vfL"/>
+                                <label alignment="left" text="You saved..." id="Ejh-LB-ExP"/>
+                            </items>
+                        </group>
+                        <group alignment="left" id="uCw-4Q-Ouw">
+                            <items>
+                                <group width="1" height="1" alignment="left" backgroundImage="piggybank-640" contentMode="scaleAspectFit" id="Eop-6Y-CbQ">
+                                    <items>
+                                        <label alignment="center" verticalAlignment="center" text="$0" id="qlb-2X-YEV">
+                                            <fontDescription key="font" type="boldSystem" pointSize="22"/>
+                                        </label>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
                     </items>
                     <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
                 </glanceController>
