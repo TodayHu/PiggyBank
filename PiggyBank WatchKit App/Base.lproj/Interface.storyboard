@@ -30,10 +30,10 @@
             </objects>
             <point key="canvasLocation" x="235" y="347"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Increase Balance Interface Controller-->
         <scene sceneID="OAU-v4-d6S">
             <objects>
-                <controller id="ibh-A6-1J1">
+                <controller id="ibh-A6-1J1" customClass="IncreaseBalanceInterfaceController" customModule="PiggyBank_WatchKit_Extension">
                     <items>
                         <imageView height="60" alignment="center" verticalAlignment="center" image="currency_dollar_red" contentMode="scaleAspectFit" id="OyQ-nJ-vrc"/>
                         <button width="1" alignment="left" verticalAlignment="bottom" title="Saved $3" id="TA6-HX-QHR"/>
