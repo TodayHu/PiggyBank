@@ -134,6 +134,8 @@
 		AB1DA6231AE23B96008A6681 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AB2A41321AE14335004FEFF2 /* BalanceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BalanceModel.swift; path = ../PiggyBank/BalanceModel.swift; sourceTree = "<group>"; };
 		AB3295131AE37E5300AC42C3 /* Options.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
+		AB3295151AE3814800AC42C3 /* PiggyBank.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PiggyBank.entitlements; sourceTree = "<group>"; };
+		AB3295161AE3818F00AC42C3 /* PiggyBank WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "PiggyBank WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		AB58DFC61ADD308D00F41625 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		AB58DFC81ADD317000F41625 /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 		AB97D9271AE3705F00D4C8C1 /* IncreaseBalanceInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncreaseBalanceInterfaceController.swift; sourceTree = "<group>"; };
@@ -254,6 +256,7 @@
 		AB16B93C1ADBE0CC00F30BC3 /* PiggyBank */ = {
 			isa = PBXGroup;
 			children = (
+				AB3295151AE3814800AC42C3 /* PiggyBank.entitlements */,
 				ABBCDFE71ADDD17700358E35 /* View Controller */,
 				AB16B93D1ADBE0CC00F30BC3 /* Supporting Files */,
 				ABBCDFE61ADD667C00358E35 /* Util */,
@@ -293,6 +296,7 @@
 		AB1DA60B1AE23B96008A6681 /* PiggyBank WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				AB3295161AE3818F00AC42C3 /* PiggyBank WatchKit Extension.entitlements */,
 				AB1DA60F1AE23B96008A6681 /* InterfaceController.swift */,
 				AB97D9271AE3705F00D4C8C1 /* IncreaseBalanceInterfaceController.swift */,
 				AB1DA6111AE23B96008A6681 /* NotificationController.swift */,
@@ -508,6 +512,12 @@
 					};
 					AB16B9391ADBE0CC00F30BC3 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 7J2HW929F8;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					AB16B94E1ADBE0CC00F30BC3 = {
 						CreatedOnToolsVersion = 6.2;
@@ -515,6 +525,12 @@
 					};
 					AB1DA6091AE23B96008A6681 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 7J2HW929F8;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					AB1DA6181AE23B96008A6681 = {
 						CreatedOnToolsVersion = 6.2;
@@ -888,10 +904,14 @@
 			baseConfigurationReference = DAAE45800054E488C0445190 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PiggyBank/PiggyBank.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = PiggyBank/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "PiggyBank/PiggyBank-Bridging-Header.h";
 			};
 			name = Debug;
@@ -901,10 +921,14 @@
 			baseConfigurationReference = F5D916FB7CD07E1B359763E7 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PiggyBank/PiggyBank.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = PiggyBank/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "PiggyBank/PiggyBank-Bridging-Header.h";
 			};
 			name = Release;
@@ -946,6 +970,9 @@
 		AB1DA6281AE23B96008A6681 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "PiggyBank WatchKit Extension/PiggyBank WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -953,6 +980,7 @@
 				INFOPLIST_FILE = "PiggyBank WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -960,9 +988,13 @@
 		AB1DA6291AE23B96008A6681 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "PiggyBank WatchKit Extension/PiggyBank WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "PiggyBank WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
