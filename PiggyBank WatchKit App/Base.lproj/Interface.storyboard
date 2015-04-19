@@ -25,6 +25,7 @@
                     </items>
                     <connections>
                         <outlet property="balanceLabel" destination="dB6-Ip-HvG" id="5ir-EA-YaQ"/>
+                        <segue destination="yhg-Ut-EjJ" kind="relationship" relationship="nextPage" id="4o4-my-2Kr"/>
                     </connections>
                 </controller>
             </objects>
@@ -49,7 +50,19 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="440" y="347"/>
+            <point key="canvasLocation" x="421" y="77"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="Md4-6T-7Sv">
+            <objects>
+                <controller id="yhg-Ut-EjJ">
+                    <items>
+                        <label alignment="center" text="Goal" id="bs9-4s-oE9"/>
+                        <label alignment="center" text="60% reached" textAlignment="center" id="by0-Ne-yGv"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="584" y="347"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
