@@ -1,13 +1,13 @@
 {
     "aps": {
         "alert": {
-            "body": "Test message",
+            "body": "Well done! $50 saved!",
             "title": "Optional title"
         },
         "category": "myCategory"
     },
     
-    "WatchKit Simulator Actions": [
+    "omit WatchKit Simulator Actions": [
         {
             "title": "First Button",
             "identifier": "firstButtonAction"
