@@ -58,9 +58,12 @@
                 <controller id="yhg-Ut-EjJ" customClass="GoalInterfaceController" customModule="PiggyBank_WatchKit_Extension">
                     <items>
                         <label alignment="center" text="Goal" id="bs9-4s-oE9"/>
-                        <imageView width="1" height="100" alignment="left" image="donut-chart-yellow-00-" contentMode="scaleAspectFit" id="u2O-aX-H4g"/>
+                        <imageView width="1" height="100" alignment="left" image="donut-chart-yellow-00-" contentMode="scaleAspectFit" initiallyAnimated="NO" id="u2O-aX-H4g"/>
                         <label alignment="center" text="60% reached" textAlignment="center" id="by0-Ne-yGv"/>
                     </items>
+                    <connections>
+                        <outlet property="donutChart" destination="u2O-aX-H4g" id="MuU-gO-xDQ"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="584" y="347"/>

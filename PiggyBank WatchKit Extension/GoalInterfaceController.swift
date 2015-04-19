@@ -14,6 +14,8 @@ import PiggyBankCommon
 
 class GoalInterfaceController: WKInterfaceController {
     
+    @IBOutlet weak var donutChart: WKInterfaceImage!
+
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
     }
@@ -21,6 +23,7 @@ class GoalInterfaceController: WKInterfaceController {
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+        donutChart.startAnimatingWithImagesInRange(NSMakeRange(0, 70), duration: 1.0, repeatCount: 1)
     }
     
     override func didDeactivate() {
