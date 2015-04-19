@@ -88,6 +88,14 @@ class ViewController: UIViewController {
         view.addSubview(balanceLabel)
 
         view.setTranslatesAutoresizingMaskIntoConstraints(false)
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("handleWatchKitNotification:"),
+            name: "WatchKitCallingParent",
+            object: nil)
+    }
+
+    func handleWatchKitNotification(notification: NSNotification) {
+        refreshUIAccordingToModel()
     }
 
     override func updateViewConstraints() {

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import WatchKit
 
 public class BalanceModel {
     
@@ -30,6 +31,7 @@ public class BalanceModel {
         balance += amount
         println("addMoney: balance: \(balance)")
         Options.sharedInstance.setBalance(balance)
+        WKInterfaceController.openParentApplication(["":""], reply: nil)
     }
 
     public func spendAll() {
@@ -38,6 +40,6 @@ public class BalanceModel {
     }
 
     public func getBalanceString() -> String {
-        return String(format: "$%.0f", balance)
+        return String(format: "$%.0f", Options.sharedInstance.getBalance())
     }
 }
