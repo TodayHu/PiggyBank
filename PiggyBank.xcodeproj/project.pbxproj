@@ -31,6 +31,7 @@
 		AB58DFC91ADD317000F41625 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB58DFC81ADD317000F41625 /* Style.swift */; };
 		AB97D9281AE3705F00D4C8C1 /* IncreaseBalanceInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB97D9271AE3705F00D4C8C1 /* IncreaseBalanceInterfaceController.swift */; };
 		ABBCDFE51ADD5D3900358E35 /* ScreenUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBCDFE41ADD5D3900358E35 /* ScreenUtil.swift */; };
+		ABF20B111AE42A4E00CB4DCF /* GoalInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF20B101AE42A4E00CB4DCF /* GoalInterfaceController.swift */; };
 		FEB279F99289E8C0356DEF09 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4573257CFEA64CF642D5045 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -140,6 +141,7 @@
 		AB58DFC81ADD317000F41625 /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 		AB97D9271AE3705F00D4C8C1 /* IncreaseBalanceInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncreaseBalanceInterfaceController.swift; sourceTree = "<group>"; };
 		ABBCDFE41ADD5D3900358E35 /* ScreenUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenUtil.swift; sourceTree = "<group>"; };
+		ABF20B101AE42A4E00CB4DCF /* GoalInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalInterfaceController.swift; sourceTree = "<group>"; };
 		ABFC99B41ADC72F40073AB46 /* PiggyBank-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PiggyBank-Bridging-Header.h"; sourceTree = "<group>"; };
 		DAAE45800054E488C0445190 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F4573257CFEA64CF642D5045 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -298,6 +300,7 @@
 			children = (
 				AB3295161AE3818F00AC42C3 /* PiggyBank WatchKit Extension.entitlements */,
 				AB1DA60F1AE23B96008A6681 /* InterfaceController.swift */,
+				ABF20B101AE42A4E00CB4DCF /* GoalInterfaceController.swift */,
 				AB97D9271AE3705F00D4C8C1 /* IncreaseBalanceInterfaceController.swift */,
 				AB1DA6111AE23B96008A6681 /* NotificationController.swift */,
 				AB1DA6131AE23B96008A6681 /* GlanceController.swift */,
@@ -689,6 +692,7 @@
 				AB97D9281AE3705F00D4C8C1 /* IncreaseBalanceInterfaceController.swift in Sources */,
 				AB1DA6121AE23B96008A6681 /* NotificationController.swift in Sources */,
 				AB1DA6101AE23B96008A6681 /* InterfaceController.swift in Sources */,
+				ABF20B111AE42A4E00CB4DCF /* GoalInterfaceController.swift in Sources */,
 				AB1DA6141AE23B96008A6681 /* GlanceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

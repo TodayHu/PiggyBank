@@ -52,10 +52,10 @@
             </objects>
             <point key="canvasLocation" x="421" y="77"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Goal Interface Controller-->
         <scene sceneID="Md4-6T-7Sv">
             <objects>
-                <controller id="yhg-Ut-EjJ">
+                <controller id="yhg-Ut-EjJ" customClass="GoalInterfaceController" customModule="PiggyBank_WatchKit_Extension">
                     <items>
                         <label alignment="center" text="Goal" id="bs9-4s-oE9"/>
                         <imageView width="1" height="100" alignment="left" image="donut-chart-yellow-00-" contentMode="scaleAspectFit" id="u2O-aX-H4g"/>
