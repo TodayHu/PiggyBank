@@ -12,7 +12,16 @@ public class BalanceModel {
     
     private var balance = 0.0
     
-    public init() {
+    // Allows this class to be instantiated in Singleton pattern.
+    // http://stackoverflow.com/questions/24024549/dispatch-once-singleton-model-in-swift#
+    public class var sharedInstance: BalanceModel {
+        struct Static {
+            static let instance: BalanceModel = BalanceModel()
+        }
+        return Static.instance
+    }
+
+    init() {
     }
 
     public func addMoney(amount: Double) {

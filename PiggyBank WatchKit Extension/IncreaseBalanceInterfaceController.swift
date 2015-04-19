@@ -18,7 +18,7 @@ class IncreaseBalanceInterfaceController: WKInterfaceController {
         super.awakeWithContext(context)
 
         // Configure interface objects here.
-        balanceModel = BalanceModel()
+        balanceModel = BalanceModel.sharedInstance
     }
 
     override func willActivate() {

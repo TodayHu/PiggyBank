@@ -33,7 +33,7 @@ class ViewController: UIViewController {
     convenience override init() {
         self.init(nibName: nil, bundle: nil)
 
-        balanceModel = BalanceModel()
+        balanceModel = BalanceModel.sharedInstance
 
         piggybankIV = UIImageView(forAutoLayout: ())
         piggybankIV.image = UIImage(named: "piggybank-640")
