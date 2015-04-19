@@ -26,6 +26,7 @@
 		AB1DA6221AE23B96008A6681 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB1DA6201AE23B96008A6681 /* Interface.storyboard */; };
 		AB1DA6241AE23B96008A6681 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB1DA6231AE23B96008A6681 /* Images.xcassets */; };
 		AB1DA6271AE23B96008A6681 /* PiggyBank WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AB1DA60A1AE23B96008A6681 /* PiggyBank WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AB3295141AE37E5300AC42C3 /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3295131AE37E5300AC42C3 /* Options.swift */; };
 		AB58DFC71ADD308D00F41625 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB58DFC61ADD308D00F41625 /* UIColorExtensions.swift */; };
 		AB58DFC91ADD317000F41625 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB58DFC81ADD317000F41625 /* Style.swift */; };
 		AB97D9281AE3705F00D4C8C1 /* IncreaseBalanceInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB97D9271AE3705F00D4C8C1 /* IncreaseBalanceInterfaceController.swift */; };
@@ -132,6 +133,7 @@
 		AB1DA6211AE23B96008A6681 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		AB1DA6231AE23B96008A6681 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AB2A41321AE14335004FEFF2 /* BalanceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BalanceModel.swift; path = ../PiggyBank/BalanceModel.swift; sourceTree = "<group>"; };
+		AB3295131AE37E5300AC42C3 /* Options.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
 		AB58DFC61ADD308D00F41625 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		AB58DFC81ADD317000F41625 /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 		AB97D9271AE3705F00D4C8C1 /* IncreaseBalanceInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncreaseBalanceInterfaceController.swift; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				AB2A41321AE14335004FEFF2 /* BalanceModel.swift */,
+				AB3295131AE37E5300AC42C3 /* Options.swift */,
 				AB0F26961AE29DC200D18BB7 /* PiggyBankCommon.h */,
 				AB0F26941AE29DC200D18BB7 /* Supporting Files */,
 			);
@@ -630,6 +633,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB3295141AE37E5300AC42C3 /* Options.swift in Sources */,
 				AB0F26B21AE29EB600D18BB7 /* BalanceModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

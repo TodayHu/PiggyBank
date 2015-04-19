@@ -22,15 +22,19 @@ public class BalanceModel {
     }
 
     init() {
+        // Get balance from NSUserDefaults.
+        balance = Options.sharedInstance.getBalance()
     }
 
     public func addMoney(amount: Double) {
         balance += amount
         println("addMoney: balance: \(balance)")
+        Options.sharedInstance.setBalance(balance)
     }
 
     public func spendAll() {
         balance = 0.0
+        Options.sharedInstance.setBalance(balance)
     }
 
     public func getBalanceString() -> String {
