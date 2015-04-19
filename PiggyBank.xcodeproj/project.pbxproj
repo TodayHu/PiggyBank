@@ -28,6 +28,7 @@
 		AB1DA6271AE23B96008A6681 /* PiggyBank WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AB1DA60A1AE23B96008A6681 /* PiggyBank WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		AB58DFC71ADD308D00F41625 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB58DFC61ADD308D00F41625 /* UIColorExtensions.swift */; };
 		AB58DFC91ADD317000F41625 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB58DFC81ADD317000F41625 /* Style.swift */; };
+		AB97D9281AE3705F00D4C8C1 /* IncreaseBalanceInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB97D9271AE3705F00D4C8C1 /* IncreaseBalanceInterfaceController.swift */; };
 		ABBCDFE51ADD5D3900358E35 /* ScreenUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBCDFE41ADD5D3900358E35 /* ScreenUtil.swift */; };
 		FEB279F99289E8C0356DEF09 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4573257CFEA64CF642D5045 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -133,6 +134,7 @@
 		AB2A41321AE14335004FEFF2 /* BalanceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BalanceModel.swift; path = ../PiggyBank/BalanceModel.swift; sourceTree = "<group>"; };
 		AB58DFC61ADD308D00F41625 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		AB58DFC81ADD317000F41625 /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		AB97D9271AE3705F00D4C8C1 /* IncreaseBalanceInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncreaseBalanceInterfaceController.swift; sourceTree = "<group>"; };
 		ABBCDFE41ADD5D3900358E35 /* ScreenUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenUtil.swift; sourceTree = "<group>"; };
 		ABFC99B41ADC72F40073AB46 /* PiggyBank-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PiggyBank-Bridging-Header.h"; sourceTree = "<group>"; };
 		DAAE45800054E488C0445190 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -289,6 +291,7 @@
 			isa = PBXGroup;
 			children = (
 				AB1DA60F1AE23B96008A6681 /* InterfaceController.swift */,
+				AB97D9271AE3705F00D4C8C1 /* IncreaseBalanceInterfaceController.swift */,
 				AB1DA6111AE23B96008A6681 /* NotificationController.swift */,
 				AB1DA6131AE23B96008A6681 /* GlanceController.swift */,
 				AB1DA6151AE23B96008A6681 /* Images.xcassets */,
@@ -663,6 +666,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB97D9281AE3705F00D4C8C1 /* IncreaseBalanceInterfaceController.swift in Sources */,
 				AB1DA6121AE23B96008A6681 /* NotificationController.swift in Sources */,
 				AB1DA6101AE23B96008A6681 /* InterfaceController.swift in Sources */,
 				AB1DA6141AE23B96008A6681 /* GlanceController.swift in Sources */,
@@ -999,6 +1003,7 @@
 				AB0F26AC1AE29DC200D18BB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AB0F26B11AE29DC200D18BB7 /* Build configuration list for PBXNativeTarget "PiggyBankCommonTests" */ = {
 			isa = XCConfigurationList;
@@ -1007,6 +1012,7 @@
 				AB0F26AE1AE29DC200D18BB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AB16B9351ADBE0CC00F30BC3 /* Build configuration list for PBXProject "PiggyBank" */ = {
 			isa = XCConfigurationList;
