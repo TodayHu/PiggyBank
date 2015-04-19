@@ -75,6 +75,9 @@
                         </group>
                     </items>
                     <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                    <connections>
+                        <outlet property="balanceLabel" destination="qlb-2X-YEV" id="8he-x8-HnY"/>
+                    </connections>
                 </glanceController>
             </objects>
             <point key="canvasLocation" x="235" y="672"/>

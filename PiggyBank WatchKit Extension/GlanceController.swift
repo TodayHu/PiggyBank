@@ -8,9 +8,11 @@
 
 import WatchKit
 import Foundation
-
+import PiggyBankCommon
 
 class GlanceController: WKInterfaceController {
+
+    @IBOutlet weak var balanceLabel: WKInterfaceLabel!
 
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
@@ -21,6 +23,7 @@ class GlanceController: WKInterfaceController {
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+        balanceLabel.setText(BalanceModel.sharedInstance.getBalanceString())
     }
 
     override func didDeactivate() {
