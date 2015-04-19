@@ -31,5 +31,12 @@ class IncreaseBalanceInterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
     
+    @IBAction func savedThreeDollars() {
+        balanceModel.addMoney(3)
+    }
+
+    @IBAction func savedTenDollars() {
+        balanceModel.addMoney(10)
+    }
 }
 

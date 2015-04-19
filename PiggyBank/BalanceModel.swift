@@ -17,6 +17,7 @@ public class BalanceModel {
 
     public func addMoney(amount: Double) {
         balance += amount
+        println("addMoney: balance: \(balance)")
     }
 
     public func spendAll() {
